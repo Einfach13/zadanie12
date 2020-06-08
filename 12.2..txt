@@ -1,0 +1,14 @@
+class Main {
+  public static void main(String[] args) {
+    int[] a = {1,2,3,5,4,3,2,1};
+        boolean b = true;
+        for(int i=0; i < a.length;i++) {
+            if(a[i] != a[a.length-i-1]){
+                b=false;
+                break;
+            }
+        }
+        System.out.println( b ? "Это полиндром ":" Это не полиндром");
+ 
+  }
+}
